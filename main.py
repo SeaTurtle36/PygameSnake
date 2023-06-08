@@ -1,3 +1,4 @@
+# Snake made with pygame
 import pygame
 import random
 pygame.font.init()
@@ -80,7 +81,6 @@ def check_animation_time():
 
 
 def move_snake(direction):
-    global poo
     global snake_length
     global game_start
     global game_started
@@ -125,7 +125,6 @@ def move_snake(direction):
 
 def handle_snack(snack_list, bug):
   global score
-  global poo
   global animation_time
   for bug in snake_length:
     for snack in snack_list:
